@@ -4,12 +4,11 @@
 
 Output LED = 11;
 
-void setup() {
-}
+void setup() {}
 
 void loop() {
-  LED = HIGH;
-  delay(500);
   LED = LOW;
+  delay(500);
+  LED.pwmSet(10);
   delay(500);
 }
