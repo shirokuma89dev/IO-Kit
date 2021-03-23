@@ -2,13 +2,12 @@
 
 #define IS_IOKIT_INCLUDED
 
-class IO {
+class Output {
  public:
-  IO(int pin);
-  IO(int pin, int mode);
+  Output(int pin);
 
  private:
-  int _pin;
+  int _pinNumber;
 };
 
 #endif

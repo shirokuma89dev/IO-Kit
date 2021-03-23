@@ -1,5 +1,6 @@
 #include "IO-Kit.h"
+#include "Arduino.h"
 
-IO::IO(int pin) {}
-
-IO::IO(int pin, int mode) {}
+Output::Output(int pin) {
+  this->_pinNumber = pin;
+}
