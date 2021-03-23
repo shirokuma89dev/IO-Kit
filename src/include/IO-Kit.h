@@ -16,6 +16,8 @@ class Output {
   bool _pinStatus;
   int _pinPwmStatus;
   bool _pwmExp = false;
+
+  bool _isPwmUsed = false;
 };
 
 #endif
