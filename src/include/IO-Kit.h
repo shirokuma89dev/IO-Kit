@@ -10,6 +10,7 @@ class Output {
   void pwmSet(int val);
 
   Output& operator=(bool val);
+  Output& operator<<(int val);
 
  private:
   int _pinNumber;

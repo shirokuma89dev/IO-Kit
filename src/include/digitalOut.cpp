@@ -36,3 +36,8 @@ Output& Output::operator=(bool val) {
   this->set(val);
   return *this;
 }
+
+Output& Output::operator<<(int val) {
+  this->pwmSet(val);
+  return *this;
+}

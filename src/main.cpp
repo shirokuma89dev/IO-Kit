@@ -9,6 +9,7 @@ void setup() {}
 void loop() {
   LED = LOW;
   delay(500);
-  LED.pwmSet(10);
+  LED << 10;
+  // LED = HIGH;
   delay(500);
 }
