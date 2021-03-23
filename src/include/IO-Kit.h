@@ -14,7 +14,7 @@ class Output {
  private:
   int _pinNumber;
   bool _pinStatus;
-  bool _pinPwmStatus;
+  int _pinPwmStatus;
   bool _pwmExp = false;
 };
 
