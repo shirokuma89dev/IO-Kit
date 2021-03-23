@@ -3,13 +3,11 @@
 #include "include/IO-Kit.h"
 
 Output LED = 11;
+Output LED2 = 13;
 
 void setup() {}
 
 void loop() {
-  LED = LOW;
-  delay(500);
-  LED << 10;
-  // LED = HIGH;
+  LED2 = LED = !LED;
   delay(500);
 }

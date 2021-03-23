@@ -7,7 +7,6 @@ Output::Output(int pin) {
 }
 
 void Output::set(bool val) {
-
 #ifdef _STM32_DEF_
   if (!this->_pwmExp) {
     digitalWrite(this->_pinNumber, val);
@@ -32,12 +31,14 @@ void Output::pwmSet(int val) {
   }
 }
 
-Output& Output::operator=(bool val) {
+bool Output::operator=(bool val) {
   this->set(val);
-  return *this;
+  return val;
 }
 
-Output& Output::operator<<(int val) {
+int Output::operator<<(int val) {
   this->pwmSet(val);
-  return *this;
+  return val;
 }
+
+Output::operator bool() { return _pinStatus; }
