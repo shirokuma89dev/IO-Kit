@@ -16,11 +16,12 @@ class Output {
 
  private:
   int _pinNumber;
-  bool _pinStatus;
-  int _pinPwmStatus;
-  bool _pwmExp = false;
+  byte _pinStatus;
 
-  bool _isPwmUsed = false;
+#ifdef _STM32_DEF_
+  bool _pwmExp = false;
+#endif
+
 };
 
 #endif
