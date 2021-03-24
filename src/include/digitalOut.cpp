@@ -7,7 +7,6 @@ Output::Output(int pin) {
 }
 
 void Output::set(bool val) {
-  
 #ifdef _STM32_DEF_
   if (!this->_pwmExp) {
     digitalWrite(this->_pinNumber, val);
@@ -30,7 +29,6 @@ void Output::setPWM(int val) {
     this->_pwmExp = true;
   }
 #endif
-
 }
 
 float Output::operator=(float val) {
@@ -48,4 +46,4 @@ int Output::operator<<=(int val) {
   return val;
 }
 
-Output::operator bool() { return _pinStatus; }
+Output::operator float() { return _pinStatus / 255.0; }

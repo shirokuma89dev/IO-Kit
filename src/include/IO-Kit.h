@@ -12,7 +12,7 @@ class Output {
   float operator=(float val);
   int operator<<=(int val);
 
-  operator bool();
+  operator float();
 
  private:
   int _pinNumber;
