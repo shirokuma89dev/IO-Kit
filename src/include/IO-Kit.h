@@ -21,7 +21,6 @@ class Output {
 #ifdef _STM32_DEF_
   bool _pwmExp = false;
 #endif
-
 };
 
 #endif
