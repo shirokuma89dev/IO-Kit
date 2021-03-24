@@ -9,9 +9,6 @@ class Output {
  public:
   Output(int pin);
 
-  void set(bool val);
-  void setPWM(int val);
-
   float operator=(float val);
   int operator<<=(int val);
 
@@ -20,6 +17,9 @@ class Output {
  private:
   int _pinNumber;
   byte _pinStatus;
+
+  void set(bool val);
+  void setPWM(int val);
 
 #ifdef _STM32_DEF_
   bool _pwmExp = false;
