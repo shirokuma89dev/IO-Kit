@@ -36,7 +36,7 @@ bool Output::operator=(bool val) {
   return val;
 }
 
-int Output::operator<<(int val) {
+int Output::operator<<=(int val) {
   this->pwmSet(val);
   return val;
 }

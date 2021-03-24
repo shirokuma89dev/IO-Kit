@@ -10,7 +10,7 @@ class Output {
   void pwmSet(int val);
 
   bool operator=(bool val);
-  int operator<<(int val);
+  int operator<<=(int val);
 
   operator bool();
 
