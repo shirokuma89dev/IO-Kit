@@ -6,11 +6,12 @@ Output LED1 = 13;
 Output LED2 = 10;
 
 Input SW1(PC13, OPEN);
+Input AnalogIN1(A1, OPEN);
 
 void setup() { Serial.begin(9600); }
 
 void loop() {
   LED1 = LED2 = !LED1;
-  Serial.println(SW1.digital());
-  delay(500);
+  Serial.println(AnalogIN1.analog());
+  delay(10);
 }

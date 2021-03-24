@@ -16,3 +16,7 @@ Input::Input(int pin, bool pullup) {
 }
 
 bool Input::digital(void) { return digitalRead(this->_pinNumber); }
+
+float Input::analog(void) {
+  return float(analogRead(this->_pinNumber)) / 1023.0;
+}

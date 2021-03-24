@@ -32,6 +32,7 @@ class Input {
   Input(int pin, bool pullup);
 
   bool digital(void);
+  float analog(void);
 
  private:
   int _pinNumber;
