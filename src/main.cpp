@@ -12,6 +12,6 @@ void setup() { Serial.begin(9600); }
 
 void loop() {
   LED1 = LED2 = !LED1;
-  Serial.println(AnalogIN1);
-  delay(10);
+  Serial.println(LED1.raw());
+  delay(300);
 }
