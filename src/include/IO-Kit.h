@@ -7,7 +7,7 @@ class Output {
   Output(int pin);
 
   void set(bool val);
-  void pwmSet(int val);
+  void setPWM(int val);
 
   float operator=(float val);
   int operator<<=(int val);

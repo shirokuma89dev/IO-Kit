@@ -21,7 +21,7 @@ void Output::set(bool val) {
   this->_pinStatus = val * 255;
 }
 
-void Output::pwmSet(int val) {
+void Output::setPWM(int val) {
   analogWrite(this->_pinNumber, val);
   this->_pinStatus = val;
 
@@ -38,13 +38,13 @@ float Output::operator=(float val) {
   if (val == 1.0 || val == 0.0) {
     this->set(bool(val));
   } else {
-    this->pwmSet(round(val * 255));
+    this->setPWM(round(val * 255));
   }
   return val;
 }
 
 int Output::operator<<=(int val) {
-  this->pwmSet(val);
+  this->setPWM(val);
   return val;
 }
 
