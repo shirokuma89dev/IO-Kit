@@ -12,6 +12,8 @@ class Output {
   float operator=(float val);
   int operator<<=(int val);
 
+  byte raw(void);
+
   operator float();
 
  private:

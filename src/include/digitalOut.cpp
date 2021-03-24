@@ -47,3 +47,7 @@ int Output::operator<<=(int val) {
 }
 
 Output::operator float() { return _pinStatus / 255.0; }
+
+byte Output::raw(void) {
+  return this->_pinStatus;
+}
