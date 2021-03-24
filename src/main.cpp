@@ -5,17 +5,13 @@
 Output LED1 = 13;
 Output LED2 = 10;
 
-void setup() {
-  Serial.begin(9600);
-  LED1 = LED2 = 0.1;
-  Serial.println(LED2);
-  delay(1500);
-}
+Input SW1(PC13, OPEN);
+Input AnalogIN1(A1, OPEN);
+
+void setup() { Serial.begin(9600); }
 
 void loop() {
   LED1 = LED2 = !LED1;
-  Serial.println(LED2);
-  delay(500);
-  // LED1 = LED2 = LOW;
-  // delay(500);
+  Serial.println(AnalogIN1);
+  delay(10);
 }
