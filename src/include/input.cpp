@@ -20,3 +20,7 @@ bool Input::digital(void) { return digitalRead(this->_pinNumber); }
 float Input::analog(void) {
   return float(analogRead(this->_pinNumber)) / 1023.0;
 }
+
+int Input::raw(void) {
+  return analogRead(this->_pinNumber);
+}

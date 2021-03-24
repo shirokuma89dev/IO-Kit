@@ -33,6 +33,7 @@ class Input {
 
   bool digital(void);
   float analog(void);
+  int raw(void);
 
  private:
   int _pinNumber;
