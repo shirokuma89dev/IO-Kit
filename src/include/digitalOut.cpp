@@ -31,8 +31,13 @@ void Output::pwmSet(int val) {
   }
 }
 
-bool Output::operator=(bool val) {
-  this->set(val);
+float Output::operator=(float val) {
+  val = constrain(val, 0.0, 1.0);
+  if (val == 1.0 || val == 0.0) {
+    this->set(bool(val));
+  } else {
+    this->pwmSet(round(val * 255));
+  }
   return val;
 }
 
