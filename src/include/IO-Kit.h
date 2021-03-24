@@ -35,6 +35,8 @@ class Input {
   float analog(void);
   int raw(void);
 
+  operator bool();
+
  private:
   int _pinNumber;
   byte _pinStatus;

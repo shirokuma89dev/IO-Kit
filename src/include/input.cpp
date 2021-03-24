@@ -24,3 +24,5 @@ float Input::analog(void) {
 int Input::raw(void) {
   return analogRead(this->_pinNumber);
 }
+
+Input::operator bool() { return digital(); }
