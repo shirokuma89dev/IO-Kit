@@ -1,0 +1,21 @@
+{
+    "name": "IO-Kit",
+    "version": "1.0.0",
+    "description": "人生オブジェクト指向。ピンをmbedみたいにオブジェクト指向で扱おう。",
+    "keywords": "IO-Kit",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shirokuma89dev/RTOS-Kit.git"
+    },
+    "authors": [
+        {
+            "name": "shirokuma89dev",
+            "email": "code@shirokuma89.dev",
+            "url": "https://blog.shirokuma89.dev",
+            "maintainer": true
+        }
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "frameworks": "Arduino",
+    "platforms": "STM32, kendryte210"
+}
